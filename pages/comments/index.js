@@ -20,7 +20,15 @@ export default function Comments() {
       },
     });
     const data = await response.json();
-    setComments([...comments,data]);
+    setComments([...comments, data]);
+  };
+
+  const deleteComment = async (id) => {
+    const response = await fetch(`/api/comments/${id}`, {
+      method: "DELETE",
+    });
+    const data = await response.json();
+    fetchComments();
   };
 
   return (
@@ -40,6 +48,13 @@ export default function Comments() {
             <h2>
               {item.id} | {item.text}
             </h2>
+            <button
+              onClick={() => {
+                deleteComment(item.id);
+              }}
+            >
+              Delete
+            </button>
             <hr />
           </div>
         );
