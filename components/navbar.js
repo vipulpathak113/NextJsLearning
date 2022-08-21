@@ -15,6 +15,9 @@ export default function Navbar() {
       <Link href="/events" prefetch={false}>
         <a>Events</a>
       </Link>
+      <Link href="/comments" prefetch={false}>
+        <a>Comments</a>
+      </Link>
     </div>
   );
 }
