@@ -22,4 +22,20 @@ a {
   box-sizing: border-box;
 }
 
+.header{
+  background-color: #373b64;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  padding: 30px;
+}
+
+.footer{
+  background-color: darkslateblue;
+  color: whitesmoke;
+  font-size: 30px;
+  text-align: center;
+  padding: 20px;
+}
+
 

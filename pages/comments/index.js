@@ -1,5 +1,5 @@
-import Link from "next/link";
 import { useState } from "react";
+import Header from "../../components/header";
 
 export default function Comments() {
   const [comments, setComments] = useState([]);
@@ -62,3 +62,12 @@ export default function Comments() {
     </>
   );
 }
+
+Comments.getLayout = function pageLayout(page) {
+  return (
+    <>
+      <Header />
+      {page}
+    </>
+  );
+};
