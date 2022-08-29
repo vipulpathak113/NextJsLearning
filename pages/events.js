@@ -14,6 +14,11 @@ export default function EventList({ eventList }) {
     router.push('/events?category=sports',undefined,{shallow:true})
   };
 
+  // window.history.replaceState(null, "", `/`)
+
+  // console.log("--",router)
+  // console.log("--",window)
+
   return (
     <>
       <h1>Event list</h1>

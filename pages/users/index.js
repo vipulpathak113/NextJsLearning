@@ -1,4 +1,5 @@
 export default function Users({ users }) {
+  console.log("nnn",users)
   return (
     <>
       <h1>List of Users</h1>
